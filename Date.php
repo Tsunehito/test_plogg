@@ -70,6 +70,14 @@ class Date
     return $randomFloat;
   }
 
+  /**
+   * Creat un array which has some dates as a key & float as a value 
+   * @param  date $start_date
+   * @param  date $end_date
+   * @param  int $total
+   * @param  int $baseline
+   * @return array $result
+   */
   static function arrayGenerator($start_date, $end_date, $total, $baseline)
   {
     // Prepare un array
@@ -131,11 +139,3 @@ class Date
     return $result;
   }
 }
-
-echo Date::getNumWeekdays('2016-12-21', '2016-12-27') . "\n";
-echo Date::calculBaseline(100, 5) . "\n";
-$result = Date::arrayGenerator('2016-12-19', '2016-12-25', 75200, 50);
-foreach ($result as $key => $value) {
-  echo $key . " = " . $value . "\n";
-}
-echo array_sum($result);
