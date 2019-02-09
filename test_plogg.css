@@ -1,0 +1,30 @@
+.container{
+  background-color: #D3D3D3;
+}
+
+ #header {
+   background-image: url(img/photo_okinawa.jpg);
+   background-position: left top;
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   margin-bottom: auto;
+ }
+
+ #title {
+   color: #F0FFFF;
+   font-weight: bolder;
+ }
+
+#first, #second, #third{
+display: flex;
+width: 100%;
+}
+
+img {
+  height: 365px;
+  width: 465px;
+}
+#example1, #example2, #example3 {
+  width: 50%;
+  margin: 1em 5em 0 5em ;
+}
